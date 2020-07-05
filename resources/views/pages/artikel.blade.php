@@ -37,3 +37,15 @@
 
 </div>
 @endsection
+
+@push('scripts')
+<script src="{{ url('/sbadmin2/js/swal.min.js') }}"></script>
+<script>
+  Swal.fire({
+      title: 'Berhasil!',
+      text: 'Memasangkan script sweet alert',
+      icon: 'success',
+      confirmButtonText: 'Cool'
+  });
+</script>
+@endpush
